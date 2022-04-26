@@ -2,7 +2,7 @@
     <div>
         <FollowMouse />
         <main>
-            <section class="intro">
+            <section class="dd-w-h-100">
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-12 d-flex justify-content-between align-items-center">
@@ -21,12 +21,16 @@
                     </div>
                 </div>
             </section>
-            <section>
+            <section class="dd-w-h-100 dd-over-hidden">
                 <TextMarquee />
             </section>
-            <div>
-                <!-- <TextView /> -->
+            
+            <div class="container">
+                <div class="row">
+                    <TextView />
+                </div>
             </div>
+            <div class="dd-w-h-100"></div>
         </main>
         <Stregatto />
     </div>
@@ -37,7 +41,7 @@
 import FollowMouse from './FollowMouse.vue'
 import Stregatto from './Stregatto.vue'
 import TextMarquee from './TextMarquee.vue'
-// import TextView from './TextView.vue'
+import TextView from './TextView.vue'
 
 export default {
     name: "Main",
@@ -46,8 +50,7 @@ export default {
         FollowMouse,
         Stregatto,
         TextMarquee,
-        // TextView
-
+        TextView,
     },
 
     data () {
@@ -97,20 +100,10 @@ export default {
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Cabin:wght@700&display=swap');
+@import '.././assets/global_css.scss';
 
     main{
-        overflow-x: hidden;
         background-color: black;
-    }
-
-    section{
-        position: relative;
-        height: 100vh;
-        width: 100%;
-    }
-
-    .intro{
-        height: 100vh;
         color: white;
     }
 

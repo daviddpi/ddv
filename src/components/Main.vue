@@ -26,7 +26,7 @@
             </section>
             
             <div class="container">
-                <div class="row">
+                <div class="row m-0">
                     <TextView />
                 </div>
             </div>

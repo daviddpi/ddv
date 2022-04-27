@@ -53,6 +53,7 @@ export default {
 <style>
 .text-to-view{
     position: relative;
+    padding: 0 15px;
 }
 
 .text-to-view span{
